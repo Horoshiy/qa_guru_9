@@ -28,7 +28,7 @@ public class DinamchikiRegistrationFormTests extends TestBase {
         step("Fill registration form", () -> {
            $(".cmn-btn").click();
            $(".subscribe-form #subscribe_name").val(name);
-           $$(".subscribe-form input").get(1).val(phone);
+           $(".subscribe-form #subscribe_phone").val(phone);
            $(".subscribe-form button").click();
         });
 
